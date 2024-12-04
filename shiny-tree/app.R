@@ -91,7 +91,7 @@ server <- function(input, output) {
       x = round(runif(input$ornaments_number,-2.0, 3.0), 2),
       y = round(runif(input$ornaments_number, 1.0, 3.5), 2)
     )
-    
+  
     
     ggplot() +
       geom_polygon(data = tree_data, aes(x = x, y = y, group = group), fill = "forestgreen", color = "darkgreen") +
